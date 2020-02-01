@@ -7,7 +7,7 @@
 
   <body>
     <h2>Registros</h2>
-    <table border="1">
+    <table border="3">
       <thead>
         <tr>
           <td>Nome</td>
@@ -19,10 +19,11 @@
           <tr>
               <td><%= details.name %></td>
               <td><%= details.surname %></td>
+              <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Deletar</a></td>
           </tr>
           <% }) %>
       </tbody>
-      <button><a href="/">Voltar</a></button>
+      <button><a href="/">Novo</a></button>
     </table>
   </body>
 </html>
